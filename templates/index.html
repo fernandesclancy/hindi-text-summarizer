@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Hindi Text Summarizer</title>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+
+    <!-- 🔷 Header Box -->
+    <header class="header-box">
+        <div class="header-content">
+            <h1 class="form-title">Hindi Text Summarizer</h1>
+            <p class="subtitle">Summarize long Hindi passages instantly using AI-powered mT5.</p>
+        </div>
+    </header>
+
+    <!-- 🔳 Input + Output Grid -->
+    <main class="grid-container">
+        <!-- Input Box -->
+        <form id="summarizeForm" class="card">
+            <h2>📝 Input</h2>
+            <textarea id="text" placeholder="Enter Hindi text here..." required></textarea>
+            <button type="submit" id="summarizeBtn">Summarize</button>
+            <div id="loader" class="loader hidden"></div>
+        </form>
+
+        <!-- Output Box -->
+        <section id="summarySection" class="card">
+            <h2>📄 Output</h2>
+            <div id="summaryOutput">Summary will appear here...</div>
+            <div class="action-buttons">
+                <button type="button" id="copyBtn">📋 Copy</button>
+                <button type="button" id="downloadBtn">⬇️ Download</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- ⚫ Footer -->
+    <footer>
+        Made with ❤️ using Flask & mT5 | © 2025
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
