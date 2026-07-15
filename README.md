@@ -2,7 +2,7 @@
 
 A web-based **Abstractive Hindi Text Summarization** system built using the **mT5 Transformer model**, fine-tuned on the [XL-Sum dataset](https://huggingface.co/datasets/csebuetnlp/xlsum) along with domain-specific Hindi corpora. This project aims to enhance summarization quality for **low-resource languages** like Hindi, producing concise, human-like summaries.
 
-![Hindi Text Summarizer](screenshot.png)
+![Hindi Text Summarizer](Hindi%20Text%20summarizer.jpeg)
 
 ---
 
@@ -33,7 +33,7 @@ Python, mT5, HuggingFace Transformers, LSTM, Flask, AWS S3, BeautifulSoup, Sente
 ---
 
 ## 📂 Project Structure
-
+```
 hindi-text-summarizer/
 ├── app.py                  # Flask app entry point
 ├── evaluate_metrics.py     # ROUGE / BERTScore evaluation
@@ -42,6 +42,7 @@ hindi-text-summarizer/
 │   └── index.html          # Frontend UI
 ├── static/                 # CSS/JS assets
 └── README.md
+```
 
 ---
 
